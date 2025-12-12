@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>個人簡歷 — 林暐宸</title>
+  <meta name="description" content="Willybird29 的個人簡歷單頁網站，包含關於我、技能、經歷、作品集與聯絡方式。" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">林暐宸</a>
+      <nav class="nav" id="nav">
+        <a href="#about">關於我</a>
+        <a href="#skills">技能</a>
+        <a href="#experience">經歷</a>
+        <a href="#portfolio">作品集</a>
+        <a href="#contact">聯絡</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="切換選單">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>嗨，我是 林暐宸</h1>
+          <p class="lead">前端工程師 / UI 設計愛好者。專注於建立乾淨、可維護且具響應式的使用者介面。</p>
+          <p>
+            <a class="btn primary" href="#contact">聯絡我</a>
+            <a class="btn ghost" href="#portfolio">查看作品</a>
+          </p>
+        </div>
+        <div class="hero-photo" aria-hidden="true">
+          <!-- 可替換成個人照片 -->
+          <img src="https://media.discordapp.net/attachments/924333793895149578/1449062652860170270/IMG_1782.jpg?ex=693d8842&is=693c36c2&hm=e0a85d039fdd816c11ee755b6fe3698c9e06bedf6a2aab0213acebd096d5a94b&=&format=webp&width=584&height=779" alt="個人照片（示意）">
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>關於我</h2>
+        <p>
+          我是以使用者為中心思考的前端工程師，擅長 HTML、CSS、JavaScript（ES6+）與常見框架（React / Vue）。
+          我喜歡把複雜的設計拆解成可重複使用的元件，並確保良好的可及性與效能。
+        </p>
+        <ul class="about-list">
+          <li><strong>所在地：</strong>台灣</li>
+          <li><strong>語言：</strong>中文（母語）、英文（閱讀/溝通）</li>
+          <li><strong>聯絡方式：</strong>willylin1129@gmail.com / +886 928 646 338</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2>技能</h2>
+        <p>主要技能與工具</p>
+
+        <div class="skills-grid">
+          <div class="skill">
+            <h3>HTML &amp; CSS</h3>
+            <div class="progress"><span style="width:95%">95%</span></div>
+            <p>語意化標記、響應式設計、Sass、BEM</p>
+          </div>
+
+          <div class="skill">
+            <h3>JavaScript</h3>
+            <div class="progress"><span style="width:85%">85%</span></div>
+            <p>ES6+、DOM、Fetch、測試基礎</p>
+          </div>
+
+          <div class="skill">
+            <h3>React / Vue</h3>
+            <div class="progress"><span style="width:80%">80%</span></div>
+            <p>元件化開發、狀態管理、Hook / Composition API</p>
+          </div>
+
+          <div class="skill">
+            <h3>工具鏈</h3>
+            <div class="progress"><span style="width:75%">75%</span></div>
+            <p>Webpack / Vite、Git、CI/CD、ESLint</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2>經歷</h2>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <h3>資深前端工程師 — 範例公司 A</h3>
+            <time>2022 - 現在</time>
+            <p>領導前端團隊，負責大型 SPA 的架構與效能優化，協助建立設計系統和元件庫。</p>
+          </article>
+
+          <article class="timeline-item">
+            <h3>前端工程師 — 範例公司 B</h3>
+            <time>2019 - 2022</time>
+            <p>搭建多個響應式網站與企業管理後台，導入自動化測試與 CI 流程。</p>
+          </article>
+
+          <article class="timeline-item">
+            <h3>網頁開發實習生 — 範例工作室</h3>
+            <time>2018 - 2019</time>
+            <p>協助前端開發、樣式切版與跨瀏覽器測試，學習實務專案流程。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="section alt">
+      <div class="container">
+        <h2>作品集</h2>
+        <p>以下為部分作品示例（點擊可查看細節或 Demo）。</p>
+
+        <div class="projects-grid">
+          <figure class="project-card">
+            <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=379c1d4c2c2c1af2b5b6e3b6c3d9f2a1" alt="專案示意圖">
+            <figcaption>
+              <h4>專案名稱 A</h4>
+              <p>SPA、React、RWD</p>
+              <a class="btn small" href="#" aria-label="查看專案 A">觀看</a>
+            </figcaption>
+          </figure>
+
+          <figure class="project-card">
+            <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=0c0c1b2d3d4f5e6a7b8c9d0e1f2a3b4c" alt="專案示意圖">
+            <figcaption>
+              <h4>專案名稱 B</h4>
+              <p>企業網站、SEO 優化</p>
+              <a class="btn small" href="#" aria-label="查看專案 B">觀看</a>
+            </figcaption>
+          </figure>
+
+          <figure class="project-card">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=0123456789abcdef0123456789abcdef" alt="專案示意圖">
+            <figcaption>
+              <h4>專案名稱 C</h4>
+              <p>前端元件庫、Design System</p>
+              <a class="btn small" href="#" aria-label="查看專案 C">觀看</a>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>聯絡我</h2>
+        <p>有合作或工作邀約歡迎聯絡。</p>
+
+        <div class="contact-grid">
+          <form id="contactForm" class="contact-form" novalidate>
+            <label>
+              名稱
+              <input type="text" name="name" required placeholder="你的名字">
+            </label>
+
+            <label>
+              Email
+              <input type="email" name="email" required placeholder="your@email.com">
+            </label>
+
+            <label>
+              主旨
+              <input type="text" name="subject" placeholder="主旨">
+            </label>
+
+            <label>
+              內容
+              <textarea name="message" rows="6" required placeholder="輸入訊息..."></textarea>
+            </label>
+
+            <div class="form-actions">
+              <button class="btn primary" type="submit">送出</button>
+              <button class="btn ghost" type="reset">重設</button>
+            </div>
+
+            <p id="formMessage" class="form-message" aria-live="polite"></p>
+          </form>
+
+          <aside class="contact-info">
+            <h3>直接聯絡</h3>
+            <p><strong>Email:</strong> <a href="mailto:email@example.com">willylin1129@gmail.com</a></p>
+            <p><strong>電話：</strong> +886 928 646 338</p>
+            <p><strong>IG：</strong> <a href="#" target="_blank" rel="noopener">https://www.instagram.com/willy_birda/</a></p>
+            <p><strong>GitHub：</strong> <a href="#" target="_blank" rel="noopener">github.com/Willybird29</a></p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> 林暐宸 — Built with ❤️</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
